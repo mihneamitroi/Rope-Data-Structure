@@ -1,0 +1,17 @@
+/* Copyright 2021 <Bulica Andrei & Mitroi Mihnea-Cristian> */
+
+    Tema este construita in jurul unor operatii ce se pot aplica unei structuri
+de tip rope. Functia de concat lipeste doi arbori, facand ca nodurile radacina
+ale acestora sa devina fii unui nou arbore, functia de index ajunge in nodul
+frunza care contine un anumit caracter si il returneaza, iar cea de search
+obtine stringul stocat intre doi parametri. Functia de split este mai complexa,
+se cauta nodul unde se realizeaza split-ul si apoi se parcurge drumul de la nod
+la root, rupandu-se legaturile pe parcurs daca nodul curent reprezinta nodul
+stang al tatalui. Insert-ul presupune ruperea arborelui initial in doi
+subarbori la indicele precizat si concatenarea acestora in ordine cu un al
+treilea arbore ce contine stringul de inserat. Delete-ul rupe arborele initial
+in 3 puncte, si elimina portiunea de mijloc, concatenand ceea ce ramane. Pe
+langa aceste functii am realizat si cateva functii auxiliare, precum una care
+retine toate nodurile prin care se trece pentru a ajunge la un anumit index, un
+fel de arbore genealogic. Mai exista functiile care returneaza greutatea totala
+a unui arbore sau cea a subarborelui stang si o implementare a functiei strdup.
